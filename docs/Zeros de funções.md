@@ -1,18 +1,20 @@
 
 Na verdade, estamos implementando "Zeros **Reais** de funções **reais**"
 
+O zero de uma função, do ponto de vista geométrico, é onde a função (em Y) cruza o eixo X.
+Do ponto de vista algébrico, por exemplo $f(x) = x - 3$, busca-se encontrar o valor de x no qual a resposta seja igual a zero $f(x) = 0$, nesse caso seria algo do tipo $x - 3 = 0 <-> x = 3 <-> f(3) = 3 - 3 = 0$, nesse caso, para obtermos $y = 0$ precisamos de $x = 3$
+
 
 Dentro de zeros de funções, temos duas etapas:
 
-- Existência
+- **Existência**
 	- Método gráfico
-	- Teorema de Bolzano
-- Refinamentos
-	- Método da bisseção
-	- Método da Falsa posição 
+	- [[Teorema de Bolzano]]
+- **Refinamentos**
+	- [[Método da bisseção]]
+	- Método da Falsa posição (ou método das cordas)
 	- Método de Newton-Raphson
 	- Método das secantes
-
 
 # Existência
 
@@ -58,18 +60,4 @@ h(x) = 2/x
 Plotando os gráficos é possível validar, da mesma forma, que existe tal solução.
 ```
 
-
-# Teorema de Bolzano
-
-Para uma função possuir solução, ela precisa
-- Ser continua no intervalo $[a,b]$ 
-- Função em a vezes em b tem que ser menor do que zero
-
-
-
-> [!NOTE] Definição do teorema de Bolzano
-> Se $f(x)$ é contínua em $[a,b]$ e $f(a) \cdot f(b) < 0$, então existe, pelo menos, um ponto $x = \xi$ no intervalo $(a,b)$ tal que $f(\xi) = 0$. 
-
  
-# Método da bisseção
-Conceitualmente, o método da bisseção divide o intervalo em dois. Dentre as duas divisões, precisamos identificar onde está a solução. Caso esteja no primeiro intervalo, descartamos o intervalo remanescente e voltamos a dividir o intervalo restante, de forma a ir restringindo iterativamente o intervalo, ao ponto de restar somente o valor que buscamos.

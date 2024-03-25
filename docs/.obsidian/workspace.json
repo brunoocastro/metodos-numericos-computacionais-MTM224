@@ -25,10 +25,18 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Método da bisseção.md",
+                "file": "Zeros de funcoes/Método da Bisseção.md",
                 "mode": "source",
                 "source": false
               }
+            }
+          },
+          {
+            "id": "ff309ba35b401711",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
             }
           },
           {
@@ -37,7 +45,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teorema de Bolzano.md",
+                "file": "Zeros de funcoes/Teorema de Bolzano.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Método da bisseção.md",
+                "file": "Zeros de funcoes/Método da Bisseção.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Método da bisseção.md",
+                "file": "Zeros de funcoes/Método da Bisseção.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Método da bisseção.md"
+                "file": "Zeros de funcoes/Método da Bisseção.md"
               }
             }
           }
@@ -173,9 +181,13 @@
   },
   "active": "07157ce43f37488b",
   "lastOpenFiles": [
-    "Teorema de Bolzano.md",
-    "Método da bisseção.md",
-    "Zeros de funções.md",
-    "Estudo sobre erros.md"
+    "Zeros de funcoes/Zeros de funções.md",
+    "Zeros de funcoes/Método da Bisseção.md",
+    "__init__.py",
+    "Zeros de funcoes/__init__.py",
+    "Zeros de funcoes/Teorema de Bolzano.md",
+    "Estudo sobre erros.md",
+    "Zeros de funcoes/Método Gráfico.md",
+    "Zeros de funcoes"
   ]
 }

@@ -4,8 +4,6 @@ import numpy as np
 
 from matplotlib import pyplot as plt
 
-from Plotter import Plotter
-
 
 class Bissecao:
     def __init__(self, f, a, b, error=0.0001):
@@ -16,25 +14,51 @@ class Bissecao:
         self.fpm = ["-"]
         self.epsilon = error
 
+        if abs(self.b[-1] - self.a[-1]) < self.epsilon:
+            print(f"A solução é {self.get_medium_point()} pelo domínio.")
+
+        if abs(self.get_f_medium_point()) < self.epsilon:
+            print(f"A solução é {self.get_medium_point()} pela imagem.")
+
     @staticmethod
     def has_solution(func, step=0.005):
-        random_a = random.random() * 10
-        random_b = random.random() * -10
+        random_a = 0
+        random_b = 1
+
+        time_init = time.time()
+
+        # pesquisar - método de busca incremental
+        while func(random_a) * func(random_b) > 0:
+            random_a -= 1
+            random_b += 1
 
         lower_interval = random_a
         higher_interval = random_b
 
-        print(higher_interval, lower_interval)
-
         while func(higher_interval) * func(lower_interval) < 0:
-            higher_interval -= step
             lower_interval += step
-            print(higher_interval, lower_interval)
+            higher_interval -= step
+
+        time_end = time.time()
+
+        print(
+            "Tempo de execução (encontrar intervalo com raiz): ",
+            time_end - time_init,
+            "s",
+        )
 
         return lower_interval, higher_interval
 
     def estimate_iterations(self):
-        higherThan = (np.log(self.b[0] - self.a[0]) - np.log(self.epsilon)) / np.log(2)
+        startInterval = self.a[0]
+        finishInterval = self.b[0]
+        print(
+            f"Intervalo inicial: {startInterval}", f"Intervalo final: {finishInterval}"
+        )
+
+        higherThan = (
+            np.log(finishInterval - startInterval) - np.log(self.epsilon)
+        ) / np.log(2)
 
         N = int(np.ceil(higherThan))
 
@@ -74,10 +98,11 @@ class Bissecao:
             if abs(self.get_f_medium_point()) < self.epsilon:
                 finished_by_image = True
 
+        self.calculate_interval()
         if finished_by_image:
-            print("Finished by image")
+            print(f"Finished by image. Root: {self.get_medium_point()}")
         else:
-            print("Finished by domain")
+            print(f"Finished by domain. Root: {self.get_medium_point()}")
 
         return self.get_medium_point()
 
@@ -101,7 +126,10 @@ class Bissecao:
     def show_final_table(self):
         tableHeader = ["n", "a", "b", "pm", "f(pm)"]
         tableContent = [
-            [index for index, value in enumerate(self.a)],
+            [
+                "Intervalo inicial" if index == 0 else index
+                for index, value in enumerate(self.a)
+            ],
             self.a,
             self.b,
             [*self.pm],
@@ -112,8 +140,15 @@ class Bissecao:
 
         fig, ax = plt.subplots()
 
+        # adjust table text size to be visible
+        ax.set_title("Método da bisseção - Tabela de iterações", fontsize=20)
+
         # Create the table plot
         table = ax.table(cellText=transposed_table, loc="center", colLabels=tableHeader)
+
+        # adjust cell text size to be visible
+        table.set_fontsize(16)
+        table.scale(2, 2)  # may help
 
         # Hide axes
         ax.axis("off")

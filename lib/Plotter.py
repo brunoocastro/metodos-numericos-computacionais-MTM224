@@ -1,4 +1,5 @@
 import numpy as np
+
 # import matplotlib
 # matplotlib.use('TkAgg')  # Set the backend
 import matplotlib.pyplot as plt
@@ -7,11 +8,10 @@ import matplotlib.pyplot as plt
 class Plotter:
     def __init__(self, functions):
         # rewrite to receive any ammount of functions
-        if type(functions) != list:
+        if type(functions) is not list:
             functions = [functions]
-        
-        self.functions = functions
 
+        self.functions = functions
 
     def plot_functions(self, xmin, xmax, num_points=100):
         x_values = np.linspace(xmin, xmax, num_points)

@@ -25,6 +25,18 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Zeros de funcoes/Método Gráfico.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6167ab3702c4fa1f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Zeros de funcoes/Método da Bisseção.md",
                 "mode": "source",
                 "source": false
@@ -52,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -179,15 +191,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "07157ce43f37488b",
+  "active": "6167ab3702c4fa1f",
   "lastOpenFiles": [
-    "Zeros de funcoes/Zeros de funções.md",
+    "Zeros de funcoes/Método Gráfico.md",
+    "Math Simbols.md",
     "Zeros de funcoes/Método da Bisseção.md",
+    "Zeros de funcoes/Zeros de funções.md",
     "__init__.py",
     "Zeros de funcoes/__init__.py",
     "Zeros de funcoes/Teorema de Bolzano.md",
     "Estudo sobre erros.md",
-    "Zeros de funcoes/Método Gráfico.md",
     "Zeros de funcoes"
   ]
 }

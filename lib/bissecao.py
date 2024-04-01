@@ -101,10 +101,13 @@ class Bissecao:
                 finished_by_image = True
 
         self.calculate_interval()
-        if finished_by_image:
-            print(f"Finished by image. Root: {self.get_medium_point()}")
-        else:
-            print(f"Finished by domain. Root: {self.get_medium_point()}")
+
+        print(
+            f"Método finalizado {'pela imagem' if finished_by_image else 'pelo domain'}."
+        )
+        print(
+            f"Raiz (pm): {self.get_medium_point()} e F(pm): {self.get_f_medium_point()}"
+        )
 
         return self.get_medium_point()
 

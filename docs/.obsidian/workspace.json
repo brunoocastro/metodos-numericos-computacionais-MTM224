@@ -4,67 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "46b8896d7eb3f8c5",
+        "id": "e399022408df4656",
         "type": "tabs",
         "children": [
           {
-            "id": "52de4da9942f7ead",
+            "id": "bc86f3f396f10a0a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Estudo sobre erros.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "07157ce43f37488b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Zeros de funcoes/Método Gráfico.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6167ab3702c4fa1f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Zeros de funcoes/Método da Bisseção.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ff309ba35b401711",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {}
             }
-          },
-          {
-            "id": "6af98ac5356a6771",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Zeros de funcoes/Teorema de Bolzano.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -130,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zeros de funcoes/Método da Bisseção.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zeros de funcoes/Método da Bisseção.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Zeros de funcoes/Método da Bisseção.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -191,17 +138,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6167ab3702c4fa1f",
+  "active": "bc86f3f396f10a0a",
   "lastOpenFiles": [
     "Zeros de funcoes/Teorema de Bolzano.md",
+    "Estudo sobre erros.md",
     "Zeros de funcoes/Método Gráfico.md",
+    "Zeros de funcoes/Método da Bisseção.md",
     "Zeros de funcoes/Zeros de funções.md",
     "Método da Falsa posição.md",
-    "Zeros de funcoes/Método da Bisseção.md",
     "Math Simbols.md",
     "__init__.py",
     "Zeros de funcoes/__init__.py",
-    "Estudo sobre erros.md",
     "Zeros de funcoes"
   ]
 }

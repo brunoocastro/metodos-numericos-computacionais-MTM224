@@ -114,7 +114,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 263.5004348754883
   },
   "right": {
     "id": "120a8d0aca4989ea",
@@ -193,13 +193,14 @@
   },
   "active": "6167ab3702c4fa1f",
   "lastOpenFiles": [
+    "Zeros de funcoes/Teorema de Bolzano.md",
     "Zeros de funcoes/Método Gráfico.md",
-    "Math Simbols.md",
-    "Zeros de funcoes/Método da Bisseção.md",
     "Zeros de funcoes/Zeros de funções.md",
+    "Método da Falsa posição.md",
+    "Zeros de funcoes/Método da Bisseção.md",
+    "Math Simbols.md",
     "__init__.py",
     "Zeros de funcoes/__init__.py",
-    "Zeros de funcoes/Teorema de Bolzano.md",
     "Estudo sobre erros.md",
     "Zeros de funcoes"
   ]

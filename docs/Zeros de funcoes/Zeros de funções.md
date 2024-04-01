@@ -12,7 +12,7 @@ Dentro de zeros de funções, temos duas etapas:
 	- [[Teorema de Bolzano]]
 - **Refinamentos**
 	- [[Método da Bisseção]]
-	- Método da Falsa posição (ou método das cordas)
+	- [[Método da Falsa posição]] (ou método das cordas)
 	- Método de Newton-Raphson
 	- Método das secantes
 

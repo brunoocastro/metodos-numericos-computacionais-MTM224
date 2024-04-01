@@ -1,4 +1,3 @@
-import random
 import time
 import numpy as np
 
@@ -14,11 +13,16 @@ class Bissecao:
         self.fpm = ["-"]
         self.epsilon = error
 
-        if abs(self.b[-1] - self.a[-1]) < self.epsilon:
-            print(f"A solução é {self.get_medium_point()} pelo domínio.")
-
-        if abs(self.get_f_medium_point()) < self.epsilon:
-            print(f"A solução é {self.get_medium_point()} pela imagem.")
+        print(
+            self.f(self.a[-1]),
+            self.f(self.b[-1]),
+            self.f(self.a[-1]) * self.f(self.b[-1]),
+        )
+        if (self.f(self.b[-1]) * self.f(self.a[-1])) > 0:
+            raise Exception(
+                f"O intervalo [{self.a[-1]},{self.b[-1]}] não é valido pois\
+                      não há garantia de existência de raiz"
+            )
 
     @staticmethod
     def has_solution(func, step=0.005):
@@ -52,9 +56,7 @@ class Bissecao:
     def estimate_iterations(self):
         startInterval = self.a[0]
         finishInterval = self.b[0]
-        print(
-            f"Intervalo inicial: {startInterval}", f"Intervalo final: {finishInterval}"
-        )
+        print(f"Intervalo inicial: [{startInterval},{finishInterval}]")
 
         higherThan = (
             np.log(finishInterval - startInterval) - np.log(self.epsilon)
@@ -64,7 +66,7 @@ class Bissecao:
 
         print(f"O número de iterações N é de {N}")
 
-        return
+        return N
 
     def get_medium_point(self):
         return (self.a[-1] + self.b[-1]) / 2
@@ -78,7 +80,7 @@ class Bissecao:
 
         fpm = self.get_f_medium_point()
         self.fpm.append(fpm)
-        if fpm * self.f(self.a[0]) < 0:
+        if fpm * self.f(self.a[-1]) < 0:
             self.a.append(self.a[-1])
             self.b.append(pm)
         else:
@@ -161,7 +163,7 @@ class Bissecao:
 
 
 if __name__ == "__main__":
-    bissecao = Bissecao(lambda x: x**2 - 2, 0, 10, 1e-6)
+    bissecao = Bissecao(lambda x: x**2 - 2, 0, 10, 1e-14)
     bissecao.estimate_iterations()
     start_time = time.time()
     result = bissecao.calculate_root()
@@ -175,12 +177,3 @@ if __name__ == "__main__":
     bissecao.show_final_table()
 
     bissecao.show_method_progression()
-
-    # ex2 = lambda x: x**3 + x - 3
-    # ex2_plotter = Plotter(ex2)
-
-    # ex2_plotter.plot_functions(-10, 10)
-
-    # bissecao2 = Bissecao(ex2, -10, 10)
-    # bissecao2.calculate_root()
-    # bissecao2.show_method_progression()

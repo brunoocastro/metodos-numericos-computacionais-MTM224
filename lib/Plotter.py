@@ -1,7 +1,5 @@
 import numpy as np
 
-# import matplotlib
-# matplotlib.use('TkAgg')  # Set the backend
 import matplotlib.pyplot as plt
 
 
@@ -39,5 +37,6 @@ if __name__ == "__main__":
         return 2 / x
 
     # Instanciando a classe e plotando os gráficos
-    plotter = Plotter(g, h)
-    plotter.plot_functions(-10, 10)
+    plotter = Plotter([g, h])
+
+    plotter.plot_functions(0.01, 10)

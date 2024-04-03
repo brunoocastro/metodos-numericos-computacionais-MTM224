@@ -1,3 +1,12 @@
 [
-  "execute-code"
+  "execute-code",
+  "obsidian-excalidraw-plugin",
+  "dataview",
+  "obsidian-git",
+  "obsidian-outliner",
+  "obsidian-icon-folder",
+  "obsidian-mind-map",
+  "table-editor-obsidian",
+  "code-emitter",
+  "vscode-editor"
 ]

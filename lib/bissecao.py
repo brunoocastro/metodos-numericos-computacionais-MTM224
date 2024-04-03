@@ -5,6 +5,8 @@ from matplotlib import pyplot as plt
 
 
 class Bissecao:
+    name = "Método da Bisseção"
+
     def __init__(self, f, a, b, error=0.0001):
         self.a = [a]
         self.b = [b]
@@ -123,7 +125,7 @@ class Bissecao:
         ax.set_yticklabels([f"[{i+1}]" for i in range(len(self.a))])
         # ax.set_yticklabels([f"Iteration {i+1}" for i in range(len(self.a))])
         ax.set_xlabel("x")
-        ax.set_title("Bisection Method Progression")
+        ax.set_title(f"Progressão do {self.name}")
         ax.grid(True)
         # plt.savefig("bisection_progression.png")
         plt.show()
@@ -146,7 +148,7 @@ class Bissecao:
         fig, ax = plt.subplots()
 
         # adjust table text size to be visible
-        ax.set_title("Método da bisseção - Tabela de iterações", fontsize=20)
+        ax.set_title(f"{self.name} - Tabela de iterações", fontsize=20)
 
         # Create the table plot
         table = ax.table(cellText=transposed_table, loc="center", colLabels=tableHeader)

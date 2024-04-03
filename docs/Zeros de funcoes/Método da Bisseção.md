@@ -1,37 +1,17 @@
 
+Método para resolução de problemas de [[Zeros de funções]]
+
 Conceitualmente, o método da bisseção divide o intervalo em dois. Dentre as duas divisões, precisamos identificar onde está a solução.
 - Primeiramente validamos se o ponto médio (o ponto exato onde o intervalo foi dividido) é a solução. Caso seja, já encontramos a resposta.
 - Caso contrário, só temos duas possibilidades:
 	- Ou está na primeira metade do intervalo
 	- Ou está na segunda metade do intervalo
 
-Caso esteja no primeiro intervalo, descartamos o intervalo remanescente, visto que certamente nossa resposta está no primeiro intervalo. Após descartar o segundo intervalo, voltamos a dividir o intervalo restante, de forma a ir restringindo iterativamente o intervalo, ao ponto de restar somente o valor que buscamos, de acordo com um erro mínimo estabelecido.
+Caso esteja no primeiro intervalo, descartamos o intervalo remanescente, visto que certamente nossa resposta está no primeiro intervalo. Após descartar o segundo intervalo, voltamos a dividir o intervalo restante, de forma a ir restringindo iterativamente o intervalo, ao ponto de restar somente o valor que buscamos, de acordo com um erro mínimo estabelecido, que pode ser entendido através do [[Estudo sobre erros]].
 
-# Erro absoluto
-É a diferença entre o valor exato $(x)$ de uma grandeza e o seu valor aproximado $(\bar x)$
-$$
-E_{A_x} = x - \bar x
-$$
-Na prática, a definição do erro absoluto tem pouca utilidade - pois não conhecemos o valor exato $(x)$
+# Validar existência de solução
 
-Utilizamos, de fato, um limitando superior para o erro absoluto.
-
-**Ex 1:** $\sqrt 2 \in (1.4;1.5)$
-
-Para qualquer aproximação $\sqrt 2$ no intervalo $(1.4;1.5)$ temos $E_{A_{\sqrt 2}} < 0.1$
-
-**Ex 2:** $\pi \in (3.14;3.15)$
-Para qualquer aproximação de $\pi$ no intervalo (3.14;3.15) temos $E_{A_{\pi}} < 0.01$
-
-# Erro relativo ($E_R$)
-$$
-E_{R_X} = \frac {E_{A_X}}{\bar X}
-$$
-
-Dessa forma, estamos "normalizando" o erro absoluto, na prática, temos uma medida percentual de erro. Isso nos traz uma informação muito mais significativa que o Erro Absoluto, pois permite compreender a proporção do erro observado, e não somente o seu valor absoluto.
-
-Neste caso, podemos dizer que o $E_{R_X}$ representa muito melhor o erro do que o $E_{A_X}$
-
+Para validar a existência de solução, podemos utilizar tanto o [[Teorema de Bolzano]] quanto o [[Método Gráfico]], desde que a função satisfaça as condições dos teoremas.
 
 # Como encontrar a solução
 

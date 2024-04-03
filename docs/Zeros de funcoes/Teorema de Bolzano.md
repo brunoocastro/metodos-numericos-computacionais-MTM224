@@ -1,6 +1,7 @@
 Para uma função possuir solução, ela precisa
 - Ser continua no intervalo $[a,b]$ 
 - Função em a vezes em b tem que ser menor do que zero
+	- $f(a)*f(b)<0$
 
 > [!NOTE] Definição do teorema de Bolzano
 > Se $f(x)$ é contínua em $[a,b]$ e $f(a) \cdot f(b) < 0$, então existe, pelo menos, um ponto $x = \xi$ no intervalo $(a,b)$ tal que $f(\xi) = 0$. 

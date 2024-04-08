@@ -13,6 +13,6 @@ Dentro de zeros de funções, temos duas etapas:
 - **Refinamentos**
 	- [[Método da Bisseção]]
 	- [[Método da Falsa posição]] (ou método das cordas)
-	- Método de Newton-Raphson
+	- [[Método de Newton-Raphson (das Tangentes)]]
 	- Método das secantes
 

@@ -32,18 +32,6 @@
             }
           },
           {
-            "id": "7c68d9a50c0ee163",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Zeros de funcoes/Método da Falsa posição.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "d840df0ee0716a25",
             "type": "leaf",
             "state": {
@@ -52,16 +40,6 @@
                 "file": "Zeros de funcoes/Zeros de funções.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "f85c02806113221c",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "images/falsa-posicao-2.png"
               }
             }
           }
@@ -132,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zeros de funcoes/Método da Falsa posição.md",
+                "file": "Zeros de funcoes/Zeros de funções.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zeros de funcoes/Método da Falsa posição.md",
+                "file": "Zeros de funcoes/Zeros de funções.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zeros de funcoes/Método da Falsa posição.md"
+                "file": "Zeros de funcoes/Zeros de funções.md"
               }
             }
           }
@@ -196,18 +174,22 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "7c68d9a50c0ee163",
+  "active": "d840df0ee0716a25",
   "lastOpenFiles": [
+    "images/falsa-posicao-2.png",
+    "images/newton-raphson-3.png",
+    "images/newton-raphson-2.png",
+    "Excalidraw/Método de Newton-Raphson (das Tangentes) 2024-04-08 14.40.19.excalidraw.md",
+    "images/newton-raphson-1.png",
     "Método de Newton-Raphson (das Tangentes).md",
+    "Zeros de funcoes/Método da Falsa posição.md",
     "Equações diferenciais.md",
     "Zeros de funcoes/Zeros de funções.md",
     "Math Simbols.md",
     "images/falsa-posicao-4.png",
     "images/falsa-posicao-3.png",
-    "images/falsa-posicao-2.png",
     "Zeros de funcoes/Teorema de Bolzano.md",
     "Zeros de funcoes/Método Gráfico.md",
-    "Zeros de funcoes/Método da Falsa posição.md",
     "Pasted Image 20240403165935_557.png",
     "Excalidraw/MetodoFalsaPosicao2024-04-03-15.53.53.excalidraw.md",
     "images/falsa-posicao-1.png",

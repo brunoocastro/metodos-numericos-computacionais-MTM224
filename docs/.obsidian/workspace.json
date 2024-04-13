@@ -8,40 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bc86f3f396f10a0a",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/MetodoFalsaPosicao2024-04-03-15.53.53.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "dabc693fc6db2344",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Zeros de funcoes/Zeros de funções.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d840df0ee0716a25",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Zeros de funcoes/Zeros de funções.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "47b0a408031f6794",
             "type": "leaf",
             "state": {
@@ -103,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263.5004348754883,
-    "collapsed": true
+    "width": 263.5004348754883
   },
   "right": {
     "id": "120a8d0aca4989ea",
@@ -120,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/MetodoFalsaPosicao2024-04-03-15.53.53.excalidraw.md",
+                "file": "Zeros de funcoes/Teorema de Bolzano.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/MetodoFalsaPosicao2024-04-03-15.53.53.excalidraw.md",
+                "file": "Zeros de funcoes/Teorema de Bolzano.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/MetodoFalsaPosicao2024-04-03-15.53.53.excalidraw.md"
+                "file": "Zeros de funcoes/Teorema de Bolzano.md"
               }
             }
           }
@@ -184,15 +149,15 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "bc86f3f396f10a0a",
+  "active": "47b0a408031f6794",
   "lastOpenFiles": [
+    "Zeros de funcoes/Zeros de funções.md",
+    "Excalidraw/MetodoFalsaPosicao2024-04-03-15.53.53.excalidraw.md",
     "Zeros de funcoes/Método da Falsa posição.md",
     "Zeros de funcoes/Teorema de Bolzano.md",
-    "Excalidraw/MetodoFalsaPosicao2024-04-03-15.53.53.excalidraw.md",
     "Zeros de funcoes/Método de Newton-Raphson (das Tangentes).md",
     "images/newton-raphson-4.png",
     "Excalidraw/Método de Newton-Raphson (das Tangentes) 2024-04-08 14.40.19.excalidraw.md",
-    "Zeros de funcoes/Zeros de funções.md",
     "images/falsa-posicao-2.png",
     "images/newton-raphson-3.png",
     "images/newton-raphson-2.png",

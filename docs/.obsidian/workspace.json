@@ -11,11 +11,9 @@
             "id": "47b0a408031f6794",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Zeros de funcoes/Teorema de Bolzano.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/Método de Newton-Raphson (das Tangentes) 2024-04-08 14.40.19.excalidraw.md"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zeros de funcoes/Teorema de Bolzano.md",
+                "file": "Excalidraw/Método de Newton-Raphson (das Tangentes) 2024-04-08 14.40.19.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zeros de funcoes/Teorema de Bolzano.md",
+                "file": "Excalidraw/Método de Newton-Raphson (das Tangentes) 2024-04-08 14.40.19.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zeros de funcoes/Teorema de Bolzano.md"
+                "file": "Excalidraw/Método de Newton-Raphson (das Tangentes) 2024-04-08 14.40.19.excalidraw.md"
               }
             }
           }
@@ -151,11 +149,11 @@
   },
   "active": "47b0a408031f6794",
   "lastOpenFiles": [
+    "Zeros de funcoes/Método de Newton-Raphson (das Tangentes).md",
+    "Zeros de funcoes/Teorema de Bolzano.md",
     "Zeros de funcoes/Zeros de funções.md",
     "Excalidraw/MetodoFalsaPosicao2024-04-03-15.53.53.excalidraw.md",
     "Zeros de funcoes/Método da Falsa posição.md",
-    "Zeros de funcoes/Teorema de Bolzano.md",
-    "Zeros de funcoes/Método de Newton-Raphson (das Tangentes).md",
     "images/newton-raphson-4.png",
     "Excalidraw/Método de Newton-Raphson (das Tangentes) 2024-04-08 14.40.19.excalidraw.md",
     "images/falsa-posicao-2.png",

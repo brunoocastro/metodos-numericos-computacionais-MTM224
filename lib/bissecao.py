@@ -3,8 +3,10 @@ import numpy as np
 
 from matplotlib import pyplot as plt
 
+from lib.zeros_funcoes import ZerosFuncoes
 
-class Bissecao:
+
+class Bissecao(ZerosFuncoes):
     name = "Método da Bisseção"
 
     def __init__(self, f, a, b, error=0.0001):
@@ -15,16 +17,33 @@ class Bissecao:
         self.fpm = ["-"]
         self.epsilon = error
 
-        print(
-            self.f(self.a[-1]),
-            self.f(self.b[-1]),
-            self.f(self.a[-1]) * self.f(self.b[-1]),
-        )
         if (self.f(self.b[-1]) * self.f(self.a[-1])) > 0:
             raise Exception(
                 f"O intervalo [{self.a[-1]},{self.b[-1]}] não é valido pois\
                       não há garantia de existência de raiz"
             )
+
+    def calculate_root(self):
+        finished_by_image = False
+        finished_by_domain = False
+
+        while not finished_by_image and not finished_by_domain:
+            self.step()
+
+            if abs(self.b[-1] - self.a[-1]) < self.epsilon:
+                finished_by_domain = True
+
+            if abs(self.get_f_new_point()) < self.epsilon:
+                finished_by_image = True
+
+        self.step()
+
+        print(
+            f"Método finalizado {'pela imagem' if finished_by_image else 'pelo dominio'}."
+        )
+        print(f"Raiz (pm): {self.get_new_point()} e F(pm): {self.get_f_new_point()}")
+
+        return self.get_new_point()
 
     @staticmethod
     def has_solution(func, step=0.005):
@@ -70,17 +89,14 @@ class Bissecao:
 
         return N
 
-    def get_medium_point(self):
+    def get_new_point(self):
         return (self.a[-1] + self.b[-1]) / 2
 
-    def get_f_medium_point(self):
-        return self.f(self.get_medium_point())
-
-    def calculate_interval(self):
-        pm = self.get_medium_point()
+    def step(self):
+        pm = self.get_new_point()
         self.pm.append(pm)
 
-        fpm = self.get_f_medium_point()
+        fpm = self.get_f_new_point()
         self.fpm.append(fpm)
         if fpm * self.f(self.a[-1]) < 0:
             self.a.append(self.a[-1])
@@ -88,30 +104,6 @@ class Bissecao:
         else:
             self.a.append(pm)
             self.b.append(self.b[-1])
-
-    def calculate_root(self):
-        finished_by_image = False
-        finished_by_domain = False
-
-        while not finished_by_image and not finished_by_domain:
-            self.calculate_interval()
-
-            if abs(self.b[-1] - self.a[-1]) < self.epsilon:
-                finished_by_domain = True
-
-            if abs(self.get_f_medium_point()) < self.epsilon:
-                finished_by_image = True
-
-        self.calculate_interval()
-
-        print(
-            f"Método finalizado {'pela imagem' if finished_by_image else 'pelo domain'}."
-        )
-        print(
-            f"Raiz (pm): {self.get_medium_point()} e F(pm): {self.get_f_medium_point()}"
-        )
-
-        return self.get_medium_point()
 
     def show_method_progression(self):
         fig, ax = plt.subplots()

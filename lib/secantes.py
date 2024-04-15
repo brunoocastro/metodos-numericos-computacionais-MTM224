@@ -1,10 +1,16 @@
 import time
 
 from lib.bissecao import Bissecao
+from lib.zeros_funcoes import ZerosFuncoes
 
 
-class FalsaPosicao(Bissecao):
-    name = "Falsa posição"
+class NewtonRaphson(ZerosFuncoes):
+    name = "Método das secantes"
+
+    def __init__(self, f, x0, x1, error=0.0001, max_iterations = 1000):
+        self.f = f
+        self.x0 = x0
+        self.x1 = x1
 
     def get_new_point(self):
         nominator = (self.a[-1] * self.f(self.b[-1])) - (
@@ -19,7 +25,7 @@ class FalsaPosicao(Bissecao):
 
 
 if __name__ == "__main__":
-    falsa_posicao = FalsaPosicao(lambda x: x**2 - 2, 1.3, 10, 1e-6)
+    falsa_posicao = NewtonRaphson(lambda x: x**2 - 2, 1.3, 10, 1e-6)
     start_time = time.time()
     result = falsa_posicao.calculate_root()
     finish_time = time.time()

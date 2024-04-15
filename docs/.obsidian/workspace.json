@@ -67,7 +67,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263.5004348754883
+    "width": 263.5004348754883,
+    "collapsed": true
   },
   "right": {
     "id": "120a8d0aca4989ea",
@@ -147,7 +148,7 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "47b0a408031f6794",
+  "active": "d8409a2bfb18d08d",
   "lastOpenFiles": [
     "Zeros de funcoes/Método de Newton-Raphson (das Tangentes).md",
     "Zeros de funcoes/Teorema de Bolzano.md",

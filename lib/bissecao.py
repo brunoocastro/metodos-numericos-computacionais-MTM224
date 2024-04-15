@@ -23,23 +23,23 @@ class Bissecao(ZerosFuncoes):
                       não há garantia de existência de raiz"
             )
 
-    def calculate_root(self):
-        finished_by_image = False
-        finished_by_domain = False
+    def get_domain_error(self):
+        return abs(self.b[-1] - self.a[-1])
 
-        while not finished_by_image and not finished_by_domain:
+    def calculate_root(self):
+        while not self.finished_by_image and not self.finished_by_domain:
             self.step()
 
-            if abs(self.b[-1] - self.a[-1]) < self.epsilon:
-                finished_by_domain = True
+            if self.get_domain_error() < self.epsilon:
+                self.finished_by_domain = True
 
-            if abs(self.get_f_new_point()) < self.epsilon:
-                finished_by_image = True
+            if self.get_image_error() < self.epsilon:
+                self.finished_by_image = True
 
         self.step()
 
         print(
-            f"Método finalizado {'pela imagem' if finished_by_image else 'pelo dominio'}."
+            f"Método finalizado {'pela imagem' if self.finished_by_image else 'pelo dominio'}."
         )
         print(f"Raiz (pm): {self.get_new_point()} e F(pm): {self.get_f_new_point()}")
 

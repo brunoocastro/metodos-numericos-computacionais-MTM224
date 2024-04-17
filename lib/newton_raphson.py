@@ -60,7 +60,7 @@ class NewtonRaphson(ZerosFuncoes):
             print(f"Erro pelo domínio: {self.get_domain_error()}\n")
 
         print(
-            f"Método finalizado {'pela imagem' if self.finished_by_image else 'pelo dominio'}."
+            f"Método finalizado {'pela imagem' if self.finished_by_image else 'pelo dominio'} na iteração {iteration}."
         )
         print(f"Raiz (pm): {self.get_new_point()} e F(pm): {self.get_f_new_point()}")
 

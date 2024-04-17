@@ -9,71 +9,42 @@ class Secantes(NewtonRaphson):
 
     def __init__(self, f, x0, x1, error=0.0001, max_iterations=1000):
         self.f = f
-        self.x = [x0, x1]
+        self.domain = [x0, x1]
+        self.image = [f(x0), f(x1)]
         self.epsilon = error
         self.max_iterations = max_iterations
 
     def get_new_point(self):
-        next_x = self.x[-1] - (
-            (self.f(self.x[-1]) * (self.x[-1] - self.x[-2]))
-            / (self.f(self.x[-1]) - self.f(self.x[-2]))
+        next_x = self.domain[-1] - (
+            (self.f(self.domain[-1]) * (self.domain[-1] - self.domain[-2]))
+            / (self.f(self.domain[-1]) - self.f(self.domain[-2]))
         )
         return next_x
 
-    def get_domain_error(self):
-        return abs(self.x[-1] - self.x[-2]) / abs(self.x[-1])
-
     def step(self):
+        x_curr = self.domain[-1]
         x_plus_1 = self.get_new_point()
-        self.x.append(x_plus_1)
+        self.domain.append(x_plus_1)
+
+        # y_current = self.f(x_curr)
+        # self.y.append(y_current)
 
         y_plus_1 = self.f(x_plus_1)
-        self.y.append(y_plus_1)
-
-        yprime_plus_1 = self.fprime(x_plus_1)
-        self.yprime.append(yprime_plus_1)
+        self.image.append(y_plus_1)
 
         self.domain_error.append(self.get_domain_error())
         self.image_error.append(self.get_image_error())
-        return x_plus_1, y_plus_1
-
-    def calculate_root(self):
-        iteration = 0
-
-        while iteration < self.max_iterations:
-            iteration += 1
-            self.step()
-
-            if self.domain_error[-1] < self.epsilon:
-                self.finished_by_domain = True
-                print("A raiz foi encontrada pelo domínio.")
-                break
-
-            if self.image_error[-1] < self.epsilon:
-                self.finished_by_image = True
-                print("A raiz foi encontrada pela imagem.")
-                break
-
-            ##if iteration % 10 == 0:
-            print(f"Iteração {iteration}: {self.x[-1]}")
-            print(f"Erro pela imagem: {self.get_image_error()}")
-            print(f"Erro pelo domínio: {self.get_domain_error()}\n")
-
-        print(
-            f"Método finalizado {'pela imagem' if self.finished_by_image else 'pelo dominio'} na iteração {iteration}."
-        )
-        print(f"Raiz (pm): {self.get_new_point()} e F(pm): {self.get_f_new_point()}")
+        return x_curr, x_plus_1
 
     def show_final_table(self):
-        tableHeader = ["n", "x", "f(x)", "f'(x)", "Erro domínio", "Erro imagem"]
+        tableHeader = ["n", "x", "f(x)", "Erro domínio", "Erro imagem"]
         tableContent = [
             [
                 "Intervalo inicial" if index == 0 else index
-                for index, value in enumerate(self.x)
+                for index, value in enumerate(self.domain)
             ],
-            self.x,
-            self.y,
-            self.yprime,
+            self.domain,
+            self.image,
             self.domain_error,
             self.image_error,
         ]

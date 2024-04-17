@@ -10,28 +10,30 @@ class NewtonRaphson(ZerosFuncoes):
     def __init__(self, f, fprime, x0, error=0.0001, max_iterations=1000):
         self.f = f
         self.fprime = fprime
-        self.x = [x0]
-        self.y = [f(x0)]
-        self.yprime = [fprime(x0)]
+        self.domain = [x0]
+        self.image = [f(x0)]
+        self.prime_image = [fprime(x0)]
         self.epsilon = error
         self.max_iterations = max_iterations
 
     def get_new_point(self):
-        next_x = self.x[-1] - (self.f(self.x[-1]) / self.fprime(self.x[-1]))
+        next_x = self.domain[-1] - (
+            self.f(self.domain[-1]) / self.fprime(self.domain[-1])
+        )
         return next_x
 
     def get_domain_error(self):
-        return abs(self.x[-1] - self.x[-2]) / abs(self.x[-1])
+        return abs(self.domain[-1] - self.domain[-2]) / abs(self.domain[-1])
 
     def step(self):
         x_plus_1 = self.get_new_point()
-        self.x.append(x_plus_1)
+        self.domain.append(x_plus_1)
 
         y_plus_1 = self.f(x_plus_1)
-        self.y.append(y_plus_1)
+        self.image.append(y_plus_1)
 
         yprime_plus_1 = self.fprime(x_plus_1)
-        self.yprime.append(yprime_plus_1)
+        self.prime_image.append(yprime_plus_1)
 
         self.domain_error.append(self.get_domain_error())
         self.image_error.append(self.get_image_error())
@@ -55,7 +57,7 @@ class NewtonRaphson(ZerosFuncoes):
                 break
 
             ##if iteration % 10 == 0:
-            print(f"Iteração {iteration}: {self.x[-1]}")
+            print(f"Iteração {iteration}: {self.domain[-1]}")
             print(f"Erro pela imagem: {self.get_image_error()}")
             print(f"Erro pelo domínio: {self.get_domain_error()}\n")
 
@@ -69,11 +71,11 @@ class NewtonRaphson(ZerosFuncoes):
         tableContent = [
             [
                 "Intervalo inicial" if index == 0 else index
-                for index, value in enumerate(self.x)
+                for index, value in enumerate(self.domain)
             ],
-            self.x,
-            self.y,
-            self.yprime,
+            self.domain,
+            self.image,
+            self.prime_image,
             self.domain_error,
             self.image_error,
         ]

@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9f20294fb738eef1",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "images/sistemas-equacoes-lineares-1.png"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zeros de funcoes/Metodo das Secantes.md",
+                "file": "images/sistemas-equacoes-lineares-1.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zeros de funcoes/Metodo das Secantes.md",
+                "file": "images/sistemas-equacoes-lineares-1.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zeros de funcoes/Metodo das Secantes.md"
+                "file": "images/sistemas-equacoes-lineares-1.png"
               }
             }
           }
@@ -149,12 +160,14 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "49a5c7187d7396b4",
+  "active": "d8409a2bfb18d08d",
   "lastOpenFiles": [
+    "Sistemas de equações lineares.md",
+    "images/sistemas-equacoes-lineares-1.png",
+    "Zeros de funcoes/Metodo das Secantes.md",
     "images/secantes-3.png",
     "images/secantes-2.png",
     "images/secantes-1.png",
-    "Zeros de funcoes/Metodo das Secantes.md",
     "Excalidraw/Método de Newton-Raphson (das Tangentes) 2024-04-08 14.40.19.excalidraw.md",
     "Zeros de funcoes/Método de Newton-Raphson (das Tangentes).md",
     "Zeros de funcoes/Teorema de Bolzano.md",
@@ -169,7 +182,6 @@
     "Equações diferenciais.md",
     "Math Simbols.md",
     "images/falsa-posicao-4.png",
-    "images/falsa-posicao-3.png",
     "Zeros de funcoes/Método Gráfico.md",
     "images",
     "Zeros de funcoes/Método da Bisseção.md",

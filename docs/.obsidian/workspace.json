@@ -11,8 +11,12 @@
             "id": "49a5c7187d7396b4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Zeros de funcoes/Metodo das Secantes.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263.5004348754883,
-    "collapsed": true
+    "width": 263.5004348754883
   },
   "right": {
     "id": "120a8d0aca4989ea",
@@ -82,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Zeros de funcoes/Metodo das Secantes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Zeros de funcoes/Metodo das Secantes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Zeros de funcoes/Metodo das Secantes.md"
+              }
             }
           }
         ]
@@ -144,6 +151,10 @@
   },
   "active": "49a5c7187d7396b4",
   "lastOpenFiles": [
+    "images/secantes-3.png",
+    "images/secantes-2.png",
+    "images/secantes-1.png",
+    "Zeros de funcoes/Metodo das Secantes.md",
     "Excalidraw/Método de Newton-Raphson (das Tangentes) 2024-04-08 14.40.19.excalidraw.md",
     "Zeros de funcoes/Método de Newton-Raphson (das Tangentes).md",
     "Zeros de funcoes/Teorema de Bolzano.md",
@@ -160,8 +171,6 @@
     "images/falsa-posicao-4.png",
     "images/falsa-posicao-3.png",
     "Zeros de funcoes/Método Gráfico.md",
-    "Pasted Image 20240403165935_557.png",
-    "images/falsa-posicao-1.png",
     "images",
     "Zeros de funcoes/Método da Bisseção.md",
     "Estudo sobre erros.md",

@@ -7,17 +7,17 @@ class Secantes(NewtonRaphson):
     domain_error = ["-"]
     image_error = ["-"]
 
-    def __init__(self, f, fprime, x0, error=0.0001, max_iterations=1000):
+    def __init__(self, f, x0, x1, error=0.0001, max_iterations=1000):
         self.f = f
-        self.fprime = fprime
-        self.x = [x0]
-        self.y = [f(x0)]
-        self.yprime = [fprime(x0)]
+        self.x = [x0, x1]
         self.epsilon = error
         self.max_iterations = max_iterations
 
     def get_new_point(self):
-        next_x = self.x[-1] - (self.f(self.x[-1]) / self.fprime(self.x[-1]))
+        next_x = self.x[-1] - (
+            (self.f(self.x[-1]) * (self.x[-1] - self.x[-2]))
+            / (self.f(self.x[-1]) - self.f(self.x[-2]))
+        )
         return next_x
 
     def get_domain_error(self):

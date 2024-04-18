@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "images/sistemas-equacoes-lineares-1.png",
+                "file": "Zeros de funcoes/Metodo das Secantes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "images/sistemas-equacoes-lineares-1.png",
+                "file": "Zeros de funcoes/Metodo das Secantes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "images/sistemas-equacoes-lineares-1.png"
+                "file": "Zeros de funcoes/Metodo das Secantes.md"
               }
             }
           }

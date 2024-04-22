@@ -23,9 +23,11 @@
             "id": "9f20294fb738eef1",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "images/sistemas-equacoes-lineares-1.png"
+                "file": "Sistemas de equações lineares.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -96,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Zeros de funcoes/Metodo das Secantes.md",
+                "file": "Sistemas de equações lineares.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Zeros de funcoes/Metodo das Secantes.md",
+                "file": "Sistemas de equações lineares.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Zeros de funcoes/Metodo das Secantes.md"
+                "file": "Sistemas de equações lineares.md"
               }
             }
           }
@@ -160,11 +162,13 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "d8409a2bfb18d08d",
+  "active": "9f20294fb738eef1",
   "lastOpenFiles": [
+    "Math Simbols.md",
     "Sistemas de equações lineares.md",
-    "images/sistemas-equacoes-lineares-1.png",
+    "Equações diferenciais.md",
     "Zeros de funcoes/Metodo das Secantes.md",
+    "images/sistemas-equacoes-lineares-1.png",
     "images/secantes-3.png",
     "images/secantes-2.png",
     "images/secantes-1.png",
@@ -179,8 +183,6 @@
     "images/newton-raphson-3.png",
     "images/newton-raphson-2.png",
     "images/newton-raphson-1.png",
-    "Equações diferenciais.md",
-    "Math Simbols.md",
     "images/falsa-posicao-4.png",
     "Zeros de funcoes/Método Gráfico.md",
     "images",

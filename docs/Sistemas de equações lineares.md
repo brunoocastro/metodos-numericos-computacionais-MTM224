@@ -43,9 +43,9 @@ $$
 ![[sel-4.png]]![[sel-5.png]]
 Dessa forma, é possível notar que se o sistema é Triangular Superior e o sistema de equações é linear, é possível obter a solução através da seguinte dedução geral:
 
-![[Pasted image 20240422155624.png]]
+![[sel-6.png]]
 
 Com isso, é dado o seguinte algoritmo para a solução computacional do problema:
-![[Pasted image 20240422155733.png]]
+![[sel-7.png]]
 
 Porém, este, só serve para Sistemas Lineares Triangularizados, ou seja, ainda precisamos definir como chegar em um sistema desses a partir de um sistema "cheio". 

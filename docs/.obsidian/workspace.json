@@ -11,11 +11,9 @@
             "id": "49a5c7187d7396b4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Sistemas de equações lineares.md",
-                "mode": "source",
-                "source": false
+                "file": "images/sel-6.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemas de equações lineares.md",
+                "file": "images/sel-6.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemas de equações lineares.md",
+                "file": "images/sel-6.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemas de equações lineares.md"
+                "file": "images/sel-6.png"
               }
             }
           }
@@ -149,14 +147,14 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "49a5c7187d7396b4",
+  "active": "d8409a2bfb18d08d",
   "lastOpenFiles": [
-    "Pasted image 20240422155733.png",
-    "Pasted image 20240422155624.png",
+    "images/sel-7.png",
+    "images/sel-6.png",
+    "Sistemas de equações lineares.md",
     "Zeros de funcoes/Metodo das Secantes.md",
     "images/sel-5.png",
     "images/sel-4.png",
-    "Sistemas de equações lineares.md",
     "images/sel-3.png",
     "images/sel-2.png",
     "images/sel-1.png",
@@ -165,7 +163,6 @@
     "Equações diferenciais.md",
     "images/secantes-3.png",
     "images/secantes-2.png",
-    "images/secantes-1.png",
     "Excalidraw/Método de Newton-Raphson (das Tangentes) 2024-04-08 14.40.19.excalidraw.md",
     "Zeros de funcoes/Método de Newton-Raphson (das Tangentes).md",
     "Zeros de funcoes/Teorema de Bolzano.md",

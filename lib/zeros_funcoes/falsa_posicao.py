@@ -1,6 +1,6 @@
 import time
 
-from lib.bissecao import Bissecao
+from lib.zeros_funcoes.bissecao import Bissecao
 
 
 class FalsaPosicao(Bissecao):

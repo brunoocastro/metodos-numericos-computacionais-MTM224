@@ -1,5 +1,5 @@
 from matplotlib import pyplot as plt
-from lib.newton_raphson import NewtonRaphson
+from lib.zeros_funcoes.newton_raphson import NewtonRaphson
 
 
 class Secantes(NewtonRaphson):

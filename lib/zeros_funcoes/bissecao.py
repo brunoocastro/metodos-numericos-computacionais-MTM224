@@ -3,7 +3,7 @@ import numpy as np
 
 from matplotlib import pyplot as plt
 
-from lib.zeros_funcoes import ZerosFuncoes
+from lib.zeros_funcoes.zeros_funcoes import ZerosFuncoes
 
 
 class Bissecao(ZerosFuncoes):

@@ -11,9 +11,11 @@
             "id": "49a5c7187d7396b4",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "images/sel-6.png"
+                "file": "Sistemas de equações lineares.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "images/sel-6.png",
+                "file": "Sistemas de equações lineares.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "images/sel-6.png",
+                "file": "Sistemas de equações lineares.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "images/sel-6.png"
+                "file": "Sistemas de equações lineares.md"
               }
             }
           }
@@ -147,10 +149,10 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "d8409a2bfb18d08d",
+  "active": "49a5c7187d7396b4",
   "lastOpenFiles": [
-    "images/sel-7.png",
     "images/sel-6.png",
+    "images/sel-7.png",
     "Sistemas de equações lineares.md",
     "Zeros de funcoes/Metodo das Secantes.md",
     "images/sel-5.png",

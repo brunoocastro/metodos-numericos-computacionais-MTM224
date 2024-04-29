@@ -2,20 +2,26 @@ import numpy as np
 
 
 class ResSisLin:
-    def __init__(self, sisTriangular: np.ndarray, vetorSolucao: np.ndarray):
-        self.sisLin = sisTriangular
-        self.vecSolucao = vetorSolucao
+    def __init__(self, matrixA: np.ndarray, vectorB: np.ndarray):
+        self.matrixA = matrixA
+        self.vectorB = vectorB
 
         # Verifica se a matriz é quadrada e o vetor solução tem o mesmo tamanho
-        print(self.vecSolucao.shape, self.sisLin.shape)
-        if self.vecSolucao.shape[0] != self.sisLin.shape[0]:
+        print(self.vectorB.shape, self.matrixA.shape)
+        if self.vectorB.shape[0] != self.matrixA.shape[0]:
             raise Exception("Vetor solução tem dimensão diferente ")
 
         # Verifica se a matriz é triangular superior ou inferior
-        isValid, self.isUpper, self.isLower = self.isTriangular(sisTriangular)
+        isValid, self.isUpper, self.isLower = self.isTriangular(self.matrixA)
 
         if not isValid:
             raise Exception("Matriz não é triangular")
+        
+        # Print received Matrix A and Vector B
+        print("Received Matrix A:")
+        print(self.matrixA)
+        print("Received Vector B:")
+        print(self.vectorB)
 
     @staticmethod
     # Describing method
@@ -60,16 +66,16 @@ class ResSisLin:
         :return: matriz com a solução
         """
 
-        sisShape = self.sisLin.shape[0]
+        sisShape = self.matrixA.shape[0]
 
-        variationInterval = range(sisShape - 1, 1)
+        variationInterval = range(sisShape - 1, 0)
         if self.isLower:
             variationInterval = range(1, sisShape)
 
-        print(f"Variation interval for I: {variationInterval}, {sisShape}")
+        print(f"Variation interval for I: {variationInterval} with shape {sisShape}")
 
-        solution = np.zeros(sisShape)
-        solution[-1] = self.vecSolucao[-1] / self.sisLin[-1][-1]
+        solution = np.zeros((sisShape))
+        solution[-1] = self.vectorB[-1] / self.matrixA[-1][-1]
 
         print(f"Initial Solution: {solution}")
         for i in variationInterval:
@@ -77,9 +83,19 @@ class ResSisLin:
             print(f"i: {i}")
             for j in range(i, sisShape):
                 print(f"i: {i}, j: {j}, sum: {sum}")
-                sum += self.sisLin[i][j] * self.sisLin[j][i]  # Corrigir
+                sum += self.matrixA[i][j] * self.matrixA[j][i]  # Corrigir
 
-            solution[i] = self.getXn((self.vecSolucao[i] - sum), self.sisLin[i][i])
+            solution[i] = self.getXn((self.vectorB[i] - sum), self.matrixA[i][i])
 
         print(f"Solution: {solution}")
         return solution
+
+
+if __name__ == "__main__":
+    triangularA = np.array([[3, 2, 4], [0, 1 / 3, 2 / 3], [0, 0, -8]])
+    vetorTriangularB = np.array([1, 5 / 3, 0])
+
+    res = ResSisLin(triangularA, vetorTriangularB)
+    solution = res.findSolution()
+
+    print(solution)

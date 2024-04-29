@@ -50,4 +50,4 @@ Com isso, é dado o seguinte algoritmo para a solução computacional do problem
 
 Porém, este, só serve para Sistemas Lineares Triangularizados, ou seja, ainda precisamos definir como chegar em um sistema desses a partir de um sistema "cheio". 
 
-É po
+É possível fazer isso através do uso do [[Método de eliminação de Gauss]]. A saída desse método é a matriz A triangular superior com o vetor B correspondente, e com estes é possível aplicar o método abordado nesse documento para encontrar a solução final.

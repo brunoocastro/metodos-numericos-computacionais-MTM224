@@ -16,7 +16,7 @@ class ResSisLin:
 
         if not isValid:
             raise Exception("Matriz não é triangular")
-        
+
         # Print received Matrix A and Vector B
         print("Received Matrix A:")
         print(self.matrixA)

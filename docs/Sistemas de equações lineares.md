@@ -49,3 +49,5 @@ Com isso, é dado o seguinte algoritmo para a solução computacional do problem
 ![[sel-7.png]]
 
 Porém, este, só serve para Sistemas Lineares Triangularizados, ou seja, ainda precisamos definir como chegar em um sistema desses a partir de um sistema "cheio". 
+
+É po

@@ -32,6 +32,7 @@ class MetodoEliminacaoGauss:
                 self.solutionMatrix[i] = (
                     self.solutionMatrix[i] - factor * self.solutionMatrix[j]
                 )
+                print(f"Solution matrix on [{i},{j}]: \n", self.solutionMatrix, "\n")
 
         print("Solution Matrix:")
         print(self.solutionMatrix)

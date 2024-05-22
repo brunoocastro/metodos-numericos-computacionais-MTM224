@@ -68,7 +68,7 @@ class ResSisLin:
 
         sisShape = self.matrixA.shape[0]
 
-        variationInterval = range(sisShape - 1, 0)
+        variationInterval = range(0, sisShape - 1)
         if self.isLower:
             variationInterval = range(1, sisShape)
 

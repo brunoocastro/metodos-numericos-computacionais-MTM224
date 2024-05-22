@@ -79,13 +79,18 @@ class ResSisLin:
 
         print(f"Initial Solution: {solution}")
         for i in variationInterval:
+            index = (len(variationInterval) - 1) - i
             sum = 0
-            print(f"i: {i}")
-            for j in range(i, sisShape):
-                print(f"i: {i}, j: {j}, sum: {sum}")
-                sum += self.matrixA[i][j] * self.matrixA[j][i]  # Corrigir
+            print(f"i: {index}")
+            for j in range(i + 1, sisShape - 1):
+                sum += self.matrixA[index][j] * solution[j]
+                print(f"i: {index}, j: {j}, sum: {sum}")
 
-            solution[i] = self.getXn((self.vectorB[i] - sum), self.matrixA[i][i])
+            # Tem que corrigir esse solution ainda, a SUM ta errada
+            solution[index] = (self.vectorB[index] - sum) / self.matrixA[index][index]
+            print(
+                f"Solution of ({self.vectorB[index]} - {sum} / {self.matrixA[index][index]}):\n{solution}\n"
+            )
 
         print(f"Solution: {solution}")
         return solution

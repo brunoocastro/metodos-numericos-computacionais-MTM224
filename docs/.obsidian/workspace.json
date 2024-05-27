@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "14aaf80a0acc664c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Método de eliminação de Gauss.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemas de equações lineares.md",
+                "file": "Método de eliminação de Gauss.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemas de equações lineares.md",
+                "file": "Método de eliminação de Gauss.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemas de equações lineares.md"
+                "file": "Método de eliminação de Gauss.md"
               }
             }
           }
@@ -149,11 +162,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "49a5c7187d7396b4",
+  "active": "14aaf80a0acc664c",
   "lastOpenFiles": [
+    "Sistemas de equações lineares.md",
+    "Método de eliminação de Gauss.md",
     "images/sel-6.png",
     "images/sel-7.png",
-    "Sistemas de equações lineares.md",
     "Zeros de funcoes/Metodo das Secantes.md",
     "images/sel-5.png",
     "images/sel-4.png",

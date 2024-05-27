@@ -88,7 +88,7 @@ class ResSisLin:
         for i in variationInterval:
             sum = 0
             print(f"i: {i}")
-            for j in range(i + 1, array_size):
+            for j in range(i + 1, array_size + 1):
                 sum += self.matrixA[i][j] * solution[j]
                 print(f"i: {i}, j: {j}, sum: {sum}")
 
@@ -97,6 +97,8 @@ class ResSisLin:
             print(
                 f"Solution of ({self.vectorB[i]} - {sum} / {self.matrixA[i][i]}):\n{solution}\n"
             )
+
+        solution = np.round(solution, 4)
 
         print(f"Solution: {solution}")
         return solution

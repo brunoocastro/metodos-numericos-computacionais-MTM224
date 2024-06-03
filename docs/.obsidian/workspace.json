@@ -25,26 +25,34 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sistemas de equações lineares.md",
+                "file": "Fatoração LU.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0f31beee683cd1a1",
+            "id": "f3d9cc585243e652",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Fatoração LU.md",
-                "mode": "source",
-                "source": false
+                "file": "images/FATLU-4.png"
+              }
+            }
+          },
+          {
+            "id": "1f57a69806d8c1f3",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "images/FATLU-3.png"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -174,10 +182,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0f31beee683cd1a1",
+  "active": "14aaf80a0acc664c",
   "lastOpenFiles": [
-    "Sistemas de equações lineares.md",
+    "images/FATLU-4.png",
+    "Math Simbols.md",
     "Fatoração LU.md",
+    "images/FATLU-3.png",
+    "Sistemas de equações lineares.md",
+    "images/FATLU-2.png",
+    "images/FATLU-1.png",
     "Estudo sobre erros.md",
     "Equações diferenciais.md",
     "Método de eliminação de Gauss.md",
@@ -188,11 +201,6 @@
     "images/sel-4.png",
     "images/sel-3.png",
     "images/sel-2.png",
-    "images/sel-1.png",
-    "Math Simbols.md",
-    "Pasted image 20240422155119.png",
-    "images/secantes-3.png",
-    "images/secantes-2.png",
     "Excalidraw/Método de Newton-Raphson (das Tangentes) 2024-04-08 14.40.19.excalidraw.md",
     "Zeros de funcoes/Método de Newton-Raphson (das Tangentes).md",
     "Zeros de funcoes/Teorema de Bolzano.md",

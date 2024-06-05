@@ -25,9 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fatoração LU.md",
+                "file": "Métodos iterativos para Sistema Lineares.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "cd163c30c39c4fba",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "images/iterativas-3.png"
               }
             }
           },
@@ -35,11 +45,9 @@
             "id": "39c31d65b5c2d006",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Métodos iterativos para Sistema Lineares.md",
-                "mode": "source",
-                "source": false
+                "file": "images/iterativas-3.png"
               }
             }
           },
@@ -130,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Métodos iterativos para Sistema Lineares.md",
+                "file": "images/iterativas-3.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Métodos iterativos para Sistema Lineares.md",
+                "file": "images/iterativas-3.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Métodos iterativos para Sistema Lineares.md"
+                "file": "images/iterativas-3.png"
               }
             }
           }
@@ -194,26 +202,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "39c31d65b5c2d006",
+  "active": "cd163c30c39c4fba",
   "lastOpenFiles": [
-    "Fatoração LU.md",
+    "images/gaus-jacobi-3.png",
+    "images/gaus-jacobi-2.png",
+    "images/iterativas-1.png",
+    "images/gaus-jacobi-1.png",
+    "Método iterativo de Gauss-Jacobi.md",
     "Métodos iterativos para Sistema Lineares.md",
+    "Sistemas de equações lineares.md",
+    "Fatoração LU.md",
+    "images/iterativas-3.png",
+    "images/iterativas-2.png",
     "images/FATLU-4.png",
     "Math Simbols.md",
     "images/FATLU-3.png",
-    "Sistemas de equações lineares.md",
     "images/FATLU-2.png",
     "images/FATLU-1.png",
     "Estudo sobre erros.md",
     "Equações diferenciais.md",
     "Método de eliminação de Gauss.md",
-    "images/sel-6.png",
-    "images/sel-7.png",
     "Zeros de funcoes/Metodo das Secantes.md",
-    "images/sel-5.png",
-    "images/sel-4.png",
-    "images/sel-3.png",
-    "images/sel-2.png",
     "Excalidraw/Método de Newton-Raphson (das Tangentes) 2024-04-08 14.40.19.excalidraw.md",
     "Zeros de funcoes/Método de Newton-Raphson (das Tangentes).md",
     "Zeros de funcoes/Teorema de Bolzano.md",

@@ -5,11 +5,10 @@ class MetodoEliminacaoGauss:
     def __init__(self, matrixA, vectorB):
         self.matrixA = np.array(matrixA, dtype=float)
         self.vectorB = np.array(vectorB, dtype=float).reshape(-1, 1)
-        self.factorMatrix = np.zeros(self.matrixA.shape)
+        self.factorMatrix = np.eye(self.matrixA.shape[0], dtype=float)
 
         self.augmentedMatrix = self.matrixA.copy()
         self.augmentedMatrix = np.append(self.augmentedMatrix, self.vectorB, axis=1)
-
         self.n = self.matrixA.shape[0] - 1
 
     def printMatrix(self):
@@ -57,6 +56,7 @@ class MetodoEliminacaoGauss:
             ):  # o valor final é exclusivo, ou seja, vai executar de 0 a n
                 self.handlePivot(i, j)
                 factor = self.solutionMatrix[i][j] / self.solutionMatrix[j][j]
+                self.factorMatrix[i][j] = factor
                 print(f"Factor in [{i},{j}]: {factor}")
                 print("Linha i:", self.solutionMatrix[i])
                 print("Linha j:", self.solutionMatrix[j])
@@ -81,7 +81,7 @@ class MetodoEliminacaoGauss:
         self.AUpper = np.where(np.abs(self.AUpper) < 1e-4, 0, self.AUpper)
         self.BUpper = np.where(np.abs(self.BUpper) < 1e-4, 0, self.BUpper)
 
-        return self.solutionMatrix, self.AUpper, self.BUpper
+        return self.solutionMatrix, self.AUpper, self.BUpper, self.factorMatrix
 
 
 if __name__ == "__main__":

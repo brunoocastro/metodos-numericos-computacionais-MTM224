@@ -3,8 +3,8 @@ import numpy as np
 
 class ResSisLin:
     def __init__(self, matrixA: np.ndarray, vectorB: np.ndarray):
-        self.matrixA = matrixA
-        self.vectorB = vectorB
+        self.matrixA = np.array(matrixA, dtype=float)
+        self.vectorB = np.array(vectorB, dtype=float)
 
         # Verifica se a matriz é quadrada e o vetor solução tem o mesmo tamanho
         print(self.vectorB.shape, self.matrixA.shape)
@@ -72,33 +72,37 @@ class ResSisLin:
         array_size = sisShape - 1
 
         # Variation interval for (n - 1) to 0 (-1 open on rage)
-        variationInterval = range(array_size - 1, -1, -1)
-        solution[-1] = self.vectorB[-1] / self.matrixA[-1][-1]
+        if self.isUpper:
+            variationIntervalI = range(array_size - 1, -1, -1)
+            solution[-1] = self.vectorB[-1] / self.matrixA[-1][-1]
 
-        # if self.isLower:
-        # solution[-1] = self.vectorB[-1] / self.matrixA[-1][-1]
-        #     variationInterval = range(1, sisShape)
+            def getJInterval(i):
+                return range(i + 1, array_size + 1)
+
+        if self.isLower:
+            solution[0] = self.vectorB[0] / self.matrixA[0][0]
+            variationIntervalI = range(1, array_size + 1)
+
+            def getJInterval(i):
+                return range(0, i + 1)
 
         print(
-            f"Variation interval for I: {variationInterval}\
+            f"Variation interval for I: {variationIntervalI}\
                   with shape (0,{array_size})"
         )
+        print(f"Variation Interval for J: {getJInterval(0)}")
 
         print(f"Initial Solution: {solution}")
 
-        for i in variationInterval:
+        for i in variationIntervalI:
             sum = 0
             print(f"i: {i}")
-            for j in range(i + 1, array_size + 1):
+            for j in getJInterval(i):
                 sum += self.matrixA[i][j] * solution[j]
                 print(f"i: {i}, j: {j}, sum: {sum}")
 
-            # Tem que corrigir esse solution ainda, a SUM ta errada
             solution[i] = (self.vectorB[i] - sum) / self.matrixA[i][i]
-            print(
-                f"Solution of ({self.vectorB[i]} - {sum} \
-                      / {self.matrixA[i][i]}):\n{solution}\n"
-            )
+            print(f"Solution:\n{solution}\n")
 
         solution = np.round(solution, 4)
 

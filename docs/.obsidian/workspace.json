@@ -35,9 +35,11 @@
             "id": "cd163c30c39c4fba",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "images/iterativas-3.png"
+                "file": "Fatoração LU.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -138,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "images/iterativas-3.png",
+                "file": "Fatoração LU.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "images/iterativas-3.png",
+                "file": "Fatoração LU.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "images/iterativas-3.png"
+                "file": "Fatoração LU.md"
               }
             }
           }
@@ -204,15 +206,16 @@
   },
   "active": "cd163c30c39c4fba",
   "lastOpenFiles": [
+    "Método de eliminação de Gauss.md",
+    "Método iterativo de Gauss-Jacobi.md",
+    "Fatoração LU.md",
+    "images/iterativas-3.png",
     "images/gaus-jacobi-3.png",
     "images/gaus-jacobi-2.png",
     "images/iterativas-1.png",
     "images/gaus-jacobi-1.png",
-    "Método iterativo de Gauss-Jacobi.md",
     "Métodos iterativos para Sistema Lineares.md",
     "Sistemas de equações lineares.md",
-    "Fatoração LU.md",
-    "images/iterativas-3.png",
     "images/iterativas-2.png",
     "images/FATLU-4.png",
     "Math Simbols.md",
@@ -221,7 +224,6 @@
     "images/FATLU-1.png",
     "Estudo sobre erros.md",
     "Equações diferenciais.md",
-    "Método de eliminação de Gauss.md",
     "Zeros de funcoes/Metodo das Secantes.md",
     "Excalidraw/Método de Newton-Raphson (das Tangentes) 2024-04-08 14.40.19.excalidraw.md",
     "Zeros de funcoes/Método de Newton-Raphson (das Tangentes).md",

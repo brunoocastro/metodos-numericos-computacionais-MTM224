@@ -1,11 +1,12 @@
+import numpy as np
 from lib.sis_eq_lin.met_eliminacao_gauss import MetodoEliminacaoGauss
 from lib.sis_eq_lin.res_sistemas_triang import ResSisLin
 
 
 class SolucaoSistemasLineares:
-    def __init__(self, matrixA, vectorB, method="gauss"):
-        self.matrixA = matrixA
-        self.vectorB = vectorB
+    def __init__(self, matrixA, vectorB)
+        self.matrixA = np.array(matrixA, dtype=float)
+        self.vectorB = np.array(vectorB, dtype=float)
         self.method = MetodoEliminacaoGauss
 
     def findTriangular(self):

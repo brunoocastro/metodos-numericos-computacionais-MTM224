@@ -80,7 +80,8 @@ class ResSisLin:
         #     variationInterval = range(1, sisShape)
 
         print(
-            f"Variation interval for I: {variationInterval} with shape (0,{array_size})"
+            f"Variation interval for I: {variationInterval}\
+                  with shape (0,{array_size})"
         )
 
         print(f"Initial Solution: {solution}")
@@ -95,7 +96,8 @@ class ResSisLin:
             # Tem que corrigir esse solution ainda, a SUM ta errada
             solution[i] = (self.vectorB[i] - sum) / self.matrixA[i][i]
             print(
-                f"Solution of ({self.vectorB[i]} - {sum} / {self.matrixA[i][i]}):\n{solution}\n"
+                f"Solution of ({self.vectorB[i]} - {sum} \
+                      / {self.matrixA[i][i]}):\n{solution}\n"
             )
 
         solution = np.round(solution, 4)

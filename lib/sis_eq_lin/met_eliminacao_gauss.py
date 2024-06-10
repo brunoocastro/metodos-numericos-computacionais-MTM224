@@ -5,6 +5,7 @@ class MetodoEliminacaoGauss:
     def __init__(self, matrixA, vectorB):
         self.matrixA = np.array(matrixA, dtype=float)
         self.vectorB = np.array(vectorB, dtype=float).reshape(-1, 1)
+        self.factorMatrix = np.zeros(self.matrixA.shape)
 
         self.augmentedMatrix = self.matrixA.copy()
         self.augmentedMatrix = np.append(self.augmentedMatrix, self.vectorB, axis=1)
@@ -22,13 +23,6 @@ class MetodoEliminacaoGauss:
         print(self.augmentedMatrix)
 
     def handlePivot(self, i, j):
-        # pivotValue = self.solutionMatrix[j][j]
-
-        # if pivotValue != 0:
-        #     return
-
-        # print(f"Pivot is equals ZERO in ({j},{j})")
-
         higher_pos = (j, j)
         higher_value = 0
 

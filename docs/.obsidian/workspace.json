@@ -4,89 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "7778d11820b483cb",
+        "id": "8e8b8dc850191b8e",
         "type": "tabs",
         "children": [
           {
-            "id": "49a5c7187d7396b4",
+            "id": "f6c3004edf46a52c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sistemas de equações lineares.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "14aaf80a0acc664c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Métodos iterativos para Sistema Lineares.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cd163c30c39c4fba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Métodos iterativos para Sistema Lineares.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bc808c6df6cca039",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ajuste de Curvas.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "39c31d65b5c2d006",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "images/iterativas-3.png"
-              }
-            }
-          },
-          {
-            "id": "f3d9cc585243e652",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "images/FATLU-4.png"
-              }
-            }
-          },
-          {
-            "id": "1f57a69806d8c1f3",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "images/FATLU-3.png"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -136,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263.5004348754883
+    "width": 318.5
   },
   "right": {
     "id": "120a8d0aca4989ea",
@@ -152,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ajuste de Curvas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ajuste de Curvas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Ajuste de Curvas.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -216,28 +141,30 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "bc808c6df6cca039",
+  "active": "f6c3004edf46a52c",
   "lastOpenFiles": [
-    "Pasted image 20240709223708.png",
-    "Métodos iterativos para Sistema Lineares.md",
-    "Ajuste de Curvas.md",
+    "images/FATLU-3.png",
+    "images/FATLU-4.png",
+    "images/iterativas-3.png",
     "Sistemas de equações lineares.md",
+    "Métodos iterativos para Sistema Lineares.md",
+    "images/Pasted image 20240709224613.png",
+    "images/20240701_145904.jpg",
+    "images/20240703_163649.jpg",
+    "Integração Numérica.md",
+    "images/Pasted image 20240709225331.png",
+    "images/20240703_162216.jpg",
+    "images/20240703_161028.jpg",
+    "images/20240703_155301.jpg",
+    "images/20240703_154701.jpg",
+    "Interpolação Polinomial.md",
+    "Ajuste de Curvas.md",
     "Equações diferenciais.md",
     "Estudo sobre erros.md",
     "Fatoração LU.md",
     "Math Simbols.md",
     "Método de eliminação de Gauss.md",
     "Método iterativo de Gauss-Jacobi.md",
-    "images/iterativas-3.png",
-    "images/gaus-jacobi-3.png",
-    "images/gaus-jacobi-2.png",
-    "images/iterativas-1.png",
-    "images/gaus-jacobi-1.png",
-    "images/iterativas-2.png",
-    "images/FATLU-4.png",
-    "images/FATLU-3.png",
-    "images/FATLU-2.png",
-    "images/FATLU-1.png",
     "Zeros de funcoes/Metodo das Secantes.md",
     "Excalidraw/Método de Newton-Raphson (das Tangentes) 2024-04-08 14.40.19.excalidraw.md",
     "Zeros de funcoes/Método de Newton-Raphson (das Tangentes).md",

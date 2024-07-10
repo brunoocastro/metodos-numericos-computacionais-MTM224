@@ -1,49 +1,55 @@
-import math
-
-
-def trapezoid_rule(f, a, b, n):
-    h = (b - a) / n
-    integral = 0.5 * f(a) + 0.5 * f(b)
-    for i in range(1, n):
-        x = a + i * h
-        integral += f(x)
-    return integral * h
-
-
-def simpson_rule(f, a, b, n):
-    h = (b - a) / n
-    if n % 2 == 0:
-        raise ValueError("n must be odd for Simpson's rule")
-    integral = f(a) + f(b)
-    for i in range(1, n // 2):
-        x = a + (2 * i - 1) * h
-        integral += 2 * f(x)
-    for i in range(1, n // 2 + 1):
-        x = a + 2 * i * h
-        integral += 4 * f(x)
-    return integral * h / 3
+import numpy as np
+import matplotlib.pyplot as plt
 
 
 def f(x):
-    # Example function: x^2 + sin(x)
-    return x**2 + math.sin(x)
+    """Defina aqui a função que você deseja integrar."""
+    return np.sqrt(x)
 
 
-# Test the functions
-a = 0.0
-b = math.pi
-n = 1000
-
-print("Trapezoidal Rule:")
-print(trapezoid_rule(f, a, b, n))
-
-print("\nSimpson's Rule:")
-print(simpson_rule(f, a, b, n))
+def trapezoidal_rule(a, b, n, f):
+    """Implementa a regra dos trapézios para integração numérica."""
+    h = (b - a) / n
+    x = np.linspace(a, b, n + 1)
+    y = f(x)
+    area = (h / 2) * (y[0] + 2 * sum(y[1:n]) + y[n])
+    return area
 
 
-class IntegracaoNumerica:
-    def __init__(self, f, n, a, b) -> None:
-        self.f = f
-        self.n = n
-        self.a = a
-        self.b = b
+def plot_trapezoidal_integration(a, b, n, f):
+    """Plota a função e a aproximação da integração pelo método dos trapézios."""
+    x = np.linspace(a, b, 1000)
+    y = f(x)
+
+    plt.plot(x, y, "b", label="f(x)")
+
+    # Pontos utilizados na regra dos trapézios
+    x_trap = np.linspace(a, b, n + 1)
+    y_trap = f(x_trap)
+
+    # Plotando os trapézios
+    for i in range(n):
+        plt.fill(
+            [x_trap[i], x_trap[i], x_trap[i + 1], x_trap[i + 1]],
+            [0, y_trap[i], y_trap[i + 1], 0],
+            "r",
+            edgecolor="r",
+            alpha=0.3,
+        )
+
+    plt.xlabel("x")
+    plt.ylabel("f(x)")
+    plt.title("Método dos Trapézios")
+    plt.legend()
+    plt.show()
+
+
+if __name__ == "__main__":
+    a = 1
+    b = 2
+    n = 25  # Número de subintervalos
+
+    area = trapezoidal_rule(a, b, n, f)
+    print(f"Área aproximada sob a curva de {a} a {b} com {n} trapézios: {area}")
+
+    plot_trapezoidal_integration(a, b, n, f)

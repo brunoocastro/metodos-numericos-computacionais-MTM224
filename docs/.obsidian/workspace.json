@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ajuste de Curvas.md",
+                "file": "Integração Numérica.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5
+    "width": 318.5,
+    "collapsed": true
   },
   "right": {
     "id": "120a8d0aca4989ea",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ajuste de Curvas.md",
+                "file": "Integração Numérica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ajuste de Curvas.md",
+                "file": "Integração Numérica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ajuste de Curvas.md"
+                "file": "Integração Numérica.md"
               }
             }
           }
@@ -151,6 +152,8 @@
   },
   "active": "f6c3004edf46a52c",
   "lastOpenFiles": [
+    "Ajuste de Curvas.md",
+    "Interpolação Polinomial.md",
     "images/FATLU-3.png",
     "images/FATLU-4.png",
     "images/iterativas-3.png",
@@ -164,9 +167,6 @@
     "images/20240703_162216.jpg",
     "images/20240703_161028.jpg",
     "images/20240703_155301.jpg",
-    "images/20240703_154701.jpg",
-    "Interpolação Polinomial.md",
-    "Ajuste de Curvas.md",
     "Equações diferenciais.md",
     "Estudo sobre erros.md",
     "Fatoração LU.md",

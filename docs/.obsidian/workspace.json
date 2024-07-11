@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Integração Numérica.md",
+                "file": "Método iterativo de Gauss-Jacobi.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5,
-    "collapsed": true
+    "width": 318.5
   },
   "right": {
     "id": "120a8d0aca4989ea",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Integração Numérica.md",
+                "file": "Método iterativo de Gauss-Jacobi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Integração Numérica.md",
+                "file": "Método iterativo de Gauss-Jacobi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Integração Numérica.md"
+                "file": "Método iterativo de Gauss-Jacobi.md"
               }
             }
           }
@@ -153,7 +152,6 @@
   "active": "f6c3004edf46a52c",
   "lastOpenFiles": [
     "Ajuste de Curvas.md",
-    "Interpolação Polinomial.md",
     "images/FATLU-3.png",
     "images/FATLU-4.png",
     "images/iterativas-3.png",
@@ -167,6 +165,7 @@
     "images/20240703_162216.jpg",
     "images/20240703_161028.jpg",
     "images/20240703_155301.jpg",
+    "Interpolação Polinomial.md",
     "Equações diferenciais.md",
     "Estudo sobre erros.md",
     "Fatoração LU.md",

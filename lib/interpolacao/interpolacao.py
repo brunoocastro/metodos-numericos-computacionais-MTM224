@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 from lib.sis_eq_lin.met_eliminacao_gauss import MetodoEliminacaoGauss
+from lib.sis_eq_lin.res_sistemas_triang import ResSisLin
 
 
 class MetodoInterpolacaoPolinomial:
@@ -28,7 +29,7 @@ class MetodoInterpolacaoPolinomial:
         n = len(b)
         x = np.zeros_like(b)
         for i in range(n - 1, -1, -1):
-            x[i] = (b[i] - np.dot(A[i, i+1:], x[i + 1 :])) / A[i, i]
+            x[i] = (b[i] - np.dot(A[i, i + 1 :], x[i + 1 :])) / A[i, i]
         return x.flatten()
 
     def fit(self):
@@ -37,7 +38,14 @@ class MetodoInterpolacaoPolinomial:
         b = self.Y
         gauss = MetodoEliminacaoGauss(A, b)
         solutionMatrix, AUpper, BUpper, factorMatrix = gauss.findTriangular()
-        self.solveUpperTriangular(AUpper, BUpper)
+
+        sisLin = ResSisLin(AUpper, BUpper)
+
+        sol = sisLin.findSolution()
+
+        print("Solucao", sol)
+
+        # self.solveUpperTriangular(AUpper, BUpper)
 
     def predict(self, X):
         """Predict values using the interpolated polynomial"""

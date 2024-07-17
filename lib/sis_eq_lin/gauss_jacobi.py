@@ -12,6 +12,7 @@ class MetodoIterativoGaussJacobi:
         self.max_iterations = max_iterations
         self.solution = None
         self.points = []
+        self.iterations = 0
 
     def findCMatrix(self):
         n = len(self.b)
@@ -31,16 +32,29 @@ class MetodoIterativoGaussJacobi:
         """Check for convergence"""
         self.alfa = np.zeros_like(self.b)
 
+        print("Alfa:", self.alfa)
+
         for i in range(len(self.A)):
             for j in range(len(self.A)):
-                self.alfa[i] = self.alfa[i] + j * self.C[i, j]
+                self.alfa[i] = self.alfa[i] + abs(self.C[i, j])
 
-        alfa_val = self.alfa.argmax()
+        print("Alfa dps de computar:", self.alfa)
 
-        if alfa_val >= 1:
-            print("The matrix C is not convergent.")
-            return False
+        max_alfa = max(self.alfa)
+        print("Max alfa:", max_alfa)
 
+        if max_alfa >= 1:
+            self.beta = np.zeros_like(self.b)
+            for j in range(len(self.A)):
+                for i in range(len(self.A)):
+                    self.beta[i] = self.beta[i] + abs(self.C[i, j])
+
+            max_beta = max(self.beta)
+
+            if max_beta >= 1:
+                return False
+
+        print("The matrix C is convergent.")
         return True
 
     def verifyStopCriteria(self):

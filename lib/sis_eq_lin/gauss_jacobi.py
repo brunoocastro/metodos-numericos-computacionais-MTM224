@@ -3,7 +3,6 @@ import numpy as np
 
 class MetodoIterativoGaussJacobi:
     def __init__(self, A, b, tolerance=1e-10, max_iterations=1000):
-        """Initialize with matrix A, vector b, tolerance and maximum iterations"""
         self.A = np.array(A, dtype=float)
         self.b = np.array(b, dtype=float)
         self.C = np.empty((len(self.b), len(self.b)))
@@ -29,7 +28,6 @@ class MetodoIterativoGaussJacobi:
         print("G Vector:\n", self.g)
 
     def verifyConvergence(self):
-        """Check for convergence"""
         self.alfa = np.zeros_like(self.b)
 
         print("Alfa:", self.alfa)
@@ -58,7 +56,6 @@ class MetodoIterativoGaussJacobi:
         return True
 
     def verifyStopCriteria(self):
-        """Check for stop criteria"""
         self.iterations = self.iterations + 1
         print("Iteration:", self.iterations)
 
@@ -78,8 +75,6 @@ class MetodoIterativoGaussJacobi:
         return False
 
     def solve(self):
-        """Solve the system using Gauss-Jacobi iterative method"""
-
         self.findCMatrix()
 
         converges = self.verifyConvergence()

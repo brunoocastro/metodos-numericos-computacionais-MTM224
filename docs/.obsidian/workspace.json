@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Método iterativo de Gauss-Jacobi.md",
+                "file": "Ajuste de Curvas.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Método iterativo de Gauss-Jacobi.md",
+                "file": "Ajuste de Curvas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Método iterativo de Gauss-Jacobi.md",
+                "file": "Ajuste de Curvas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Método iterativo de Gauss-Jacobi.md"
+                "file": "Ajuste de Curvas.md"
               }
             }
           }
@@ -151,12 +151,14 @@
   },
   "active": "f6c3004edf46a52c",
   "lastOpenFiles": [
+    "Interpolação Polinomial.md",
+    "Método iterativo de Gauss-Jacobi.md",
+    "Métodos iterativos para Sistema Lineares.md",
     "Ajuste de Curvas.md",
     "images/FATLU-3.png",
     "images/FATLU-4.png",
     "images/iterativas-3.png",
     "Sistemas de equações lineares.md",
-    "Métodos iterativos para Sistema Lineares.md",
     "images/Pasted image 20240709224613.png",
     "images/20240701_145904.jpg",
     "images/20240703_163649.jpg",
@@ -165,13 +167,11 @@
     "images/20240703_162216.jpg",
     "images/20240703_161028.jpg",
     "images/20240703_155301.jpg",
-    "Interpolação Polinomial.md",
     "Equações diferenciais.md",
     "Estudo sobre erros.md",
     "Fatoração LU.md",
     "Math Simbols.md",
     "Método de eliminação de Gauss.md",
-    "Método iterativo de Gauss-Jacobi.md",
     "Zeros de funcoes/Metodo das Secantes.md",
     "Excalidraw/Método de Newton-Raphson (das Tangentes) 2024-04-08 14.40.19.excalidraw.md",
     "Zeros de funcoes/Método de Newton-Raphson (das Tangentes).md",

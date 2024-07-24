@@ -2,10 +2,12 @@ import numpy as np
 
 
 class MetodoEliminacaoGauss:
-    def __init__(self, matrixA, vectorB):
+    def __init__(self, matrixA, vectorB, debug=False):
         self.matrixA = np.array(matrixA, dtype=float)
         self.vectorB = np.array(vectorB, dtype=float).reshape(-1, 1)
         self.factorMatrix = np.eye(self.matrixA.shape[0], dtype=float)
+
+        self.debug = debug
 
         self.augmentedMatrix = self.matrixA.copy()
         self.augmentedMatrix = np.append(self.augmentedMatrix, self.vectorB, axis=1)
@@ -33,18 +35,23 @@ class MetodoEliminacaoGauss:
         if higher_value == 0:
             raise Exception("No pivot found. Determinante NULO")
 
-        # print("\nChanging rows:")
-        # print(f"Higher value in column j={j} is {higher_value} in {higher_pos}")
-        # print(f"Changing Row {i} with Row {j}\n")
+        if self.debug:
+            print("\nChanging rows:")
+            print(f"Higher value in column j={j} is {higher_value} in {higher_pos}")
+            print(f"Changing Row {i} with Row {j}\n")
 
-        # print(f"Solution matrix pre changes:\n{self.solutionMatrix}")
+            print(f"Solution matrix pre changes:\n{self.solutionMatrix}")
 
         aux_row = self.solutionMatrix[higher_pos[0]].copy()
-        # print(f"Initial row on pos i={j}: {self.solutionMatrix[j]}")
-        # print(f"New row on pos i={j}:", aux_row)
+
+        if self.debug:
+            print(f"Initial row on pos i={j}: {self.solutionMatrix[j]}")
+            print(f"New row on pos i={j}:", aux_row)
         self.solutionMatrix[higher_pos[0]] = self.solutionMatrix[j]
         self.solutionMatrix[j] = aux_row
-        print(f"\nSolution matrix POS PIVOT CHANGES:\n{self.solutionMatrix}\n")
+
+        if self.debug:
+            print(f"\nSolution matrix POS PIVOT CHANGES:\n{self.solutionMatrix}\n")
 
     def findTriangular(self):
         self.solutionMatrix = np.array(self.augmentedMatrix.copy())
@@ -57,14 +64,19 @@ class MetodoEliminacaoGauss:
                 self.handlePivot(i, j)
                 factor = self.solutionMatrix[i][j] / self.solutionMatrix[j][j]
                 self.factorMatrix[i][j] = factor
-                print(f"Factor in [{i},{j}]: {factor}")
-                print("Linha i:", self.solutionMatrix[i])
-                print("Linha j:", self.solutionMatrix[j])
+                if self.debug:
+                    print(f"Factor in [{i},{j}]: {factor}")
+                    print("Linha i:", self.solutionMatrix[i])
+                    print("Linha j:", self.solutionMatrix[j])
                 self.solutionMatrix[i] = (
                     self.solutionMatrix[i] - factor * self.solutionMatrix[j]
                 )
-                print("Final:", self.solutionMatrix[i])
-                print(f"Solution matrix on [{i},{j}]: \n", self.solutionMatrix, "\n")
+
+                if self.debug:
+                    print("Final:", self.solutionMatrix[i])
+                    print(
+                        f"Solution matrix on [{i},{j}]: \n", self.solutionMatrix, "\n"
+                    )
 
         print("Solution Matrix:")
         print(self.solutionMatrix)

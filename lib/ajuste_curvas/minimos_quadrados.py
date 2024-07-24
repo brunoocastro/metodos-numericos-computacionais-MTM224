@@ -16,8 +16,8 @@ class MetodoMinimosQuadrados:
                 f"O grau do polinômio deve ser no máximo igual (N - 1) para X com tamanho N.\nNeste caso o grau máximo é {len(self.X) - 1}"  # noqa
             )
 
-        self.designMatrix = self.createMatrix(self.X, self.degree)
-        print(f"Matriz A: \n{self.designMatrix}")
+        self.matrixA = self.createMatrix(self.X, self.degree)
+        print(f"Matriz A: \n{self.matrixA}")
         self.coefficients = None
 
     def createMatrix(self, X, degree):
@@ -28,10 +28,16 @@ class MetodoMinimosQuadrados:
         print("A")
         return A
 
-    def fit(self):
-        A = self.designMatrix
+    def findCoefficients(self):
+        A = self.matrixA
         b = self.Y
 
+        # ! Validar esse processo:
+        # A.T -> Transposta da matriz
+        # @ faz a multiplicação da matriz resultante pela matriz B
+        # ! Onde B é o vetor coluna de Y
+        # ! Onde A.T @ A é a matriz quadrada de coeficientes
+        # ! Onde A.T @ b é o vetor coluna de X
         AT_A = A.T @ A  # Compute A^T * A
         AT_b = A.T @ b  # Compute A^T * b
 
@@ -62,7 +68,7 @@ class MetodoMinimosQuadrados:
 
     def printCoefficients(self):
         """Print the coefficients of the model"""
-        print("Coefficients of the model:", self.coefficients)
+        print("Coefficients of the model:\n", self.coefficients)
 
     def plotDataAndFit(self):
         """Plot the original data and the polynomial fit"""

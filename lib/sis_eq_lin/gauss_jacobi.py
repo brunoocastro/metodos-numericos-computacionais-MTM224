@@ -50,6 +50,8 @@ class MetodoIterativoGaussJacobi:
             max_beta = max(self.beta)
 
             if max_beta >= 1:
+                print("The matrix C is not convergent.")
+
                 return False
 
         print("The matrix C is convergent.")
@@ -63,8 +65,10 @@ class MetodoIterativoGaussJacobi:
             print(f"Finish by finding maximum iterations - {self.iterations}")
             return True
 
-        diff = abs(self.x[self.iterations] - self.x[self.iterations - 1]) / abs(
-            self.x[self.iterations]
+        diff = abs(max(self.x_new) - max(self.x)) / max(abs(self.x_new))
+
+        print(
+            f"Verificando criterio de parada:\nDiff: {diff} | Tolerance: {self.tolerance}"
         )
 
         if self.tolerance > diff:
@@ -82,26 +86,29 @@ class MetodoIterativoGaussJacobi:
         if not converges:
             raise ValueError("The matrix is not convergent.")
 
-        n = len(self.b)
-        x = np.zeros_like(self.b)  # Initial guess (zeros)
-        x_new = np.zeros_like(x)
+        self.n = len(self.b)
+        self.x = np.zeros_like(self.b)  # Initial guess (zeros)
+        self.x_new = np.zeros_like(self.x)
 
         for iteration in range(self.max_iterations):
-            for i in range(n):
-                s = sum(self.A[i][j] * x[j] for j in range(n) if j != i)
-                x_new[i] = (self.b[i] - s) / self.A[i][i]
+            for i in range(self.n):
+                total_sum = sum(
+                    self.A[i][j] * self.x[j] for j in range(self.n) if j != i
+                )
+                self.x_new[i] = (self.b[i] - total_sum) / self.A[i][i]
 
             # Check for convergence
 
             if self.verifyStopCriteria():
-                self.solution = x_new
+                self.solution = self.x_new
                 print(f"Converged in {iteration + 1} iterations.")
                 return self.solution
 
-            x = x_new.copy()
+            self.x = self.x_new.copy()
 
         print("Did not converge within the maximum number of iterations.")
-        self.solution = x_new
+        self.solution = self.x_new
+
         return self.solution
 
 

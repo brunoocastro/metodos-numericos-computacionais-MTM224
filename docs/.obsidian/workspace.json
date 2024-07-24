@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ajuste de Curvas.md",
+                "file": "Método iterativo de Gauss-Jacobi.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ajuste de Curvas.md",
+                "file": "Método iterativo de Gauss-Jacobi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ajuste de Curvas.md",
+                "file": "Método iterativo de Gauss-Jacobi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ajuste de Curvas.md"
+                "file": "Método iterativo de Gauss-Jacobi.md"
               }
             }
           }
@@ -151,10 +151,12 @@
   },
   "active": "f6c3004edf46a52c",
   "lastOpenFiles": [
+    "Integração Numérica.md",
+    "Equações diferenciais.md",
+    "Ajuste de Curvas.md",
     "Interpolação Polinomial.md",
     "Método iterativo de Gauss-Jacobi.md",
     "Métodos iterativos para Sistema Lineares.md",
-    "Ajuste de Curvas.md",
     "images/FATLU-3.png",
     "images/FATLU-4.png",
     "images/iterativas-3.png",
@@ -162,12 +164,10 @@
     "images/Pasted image 20240709224613.png",
     "images/20240701_145904.jpg",
     "images/20240703_163649.jpg",
-    "Integração Numérica.md",
     "images/Pasted image 20240709225331.png",
     "images/20240703_162216.jpg",
     "images/20240703_161028.jpg",
     "images/20240703_155301.jpg",
-    "Equações diferenciais.md",
     "Estudo sobre erros.md",
     "Fatoração LU.md",
     "Math Simbols.md",

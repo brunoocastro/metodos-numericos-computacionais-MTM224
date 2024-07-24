@@ -14,6 +14,11 @@ class MetodoInterpolacaoPolinomial:
         # 1.1) Definir grau
         self.degree = len(X) - 1
 
+        if self.degree >= len(self.X):
+            raise ValueError(
+                f"O grau do polinômio deve ser no máximo igual (N - 1) para X com tamanho N.\nNeste caso o grau máximo é {len(self.X) - 1}"  # noqa
+            )
+
         # 2) Gerar matriz A
         self.matrixA = self.createMatrix(self.X)
         # 3) Gerar vetor B

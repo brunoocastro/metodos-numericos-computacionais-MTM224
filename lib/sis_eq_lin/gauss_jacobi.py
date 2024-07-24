@@ -59,7 +59,7 @@ class MetodoIterativoGaussJacobi:
 
     def verifyStopCriteria(self):
         self.iterations = self.iterations + 1
-        print("Iteration:", self.iterations)
+        print("\nIteracao:", self.iterations)
 
         if self.iterations > self.max_iterations:
             print(f"Finish by finding maximum iterations - {self.iterations}")

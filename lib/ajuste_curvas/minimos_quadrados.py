@@ -11,11 +11,6 @@ class MetodoMinimosQuadrados:
         self.Y = np.array(Y)
         self.degree = degree
 
-        if self.degree >= len(self.X):
-            raise ValueError(
-                f"O grau do polinômio deve ser no máximo igual (N - 1) para X com tamanho N.\nNeste caso o grau máximo é {len(self.X) - 1}"  # noqa
-            )
-
         self.matrixA = self.createMatrix(self.X, self.degree)
         print(f"Matriz A: \n{self.matrixA}")
         self.coefficients = None
@@ -25,7 +20,6 @@ class MetodoMinimosQuadrados:
         A = np.zeros((n, degree + 1))
         for i in range(degree + 1):
             A[:, i] = X**i
-        print("A")
         return A
 
     def findCoefficients(self):
@@ -69,6 +63,7 @@ class MetodoMinimosQuadrados:
     def printCoefficients(self):
         """Print the coefficients of the model"""
         print("Coefficients of the model:\n", self.coefficients)
+        
 
     def plotDataAndFit(self):
         """Plot the original data and the polynomial fit"""

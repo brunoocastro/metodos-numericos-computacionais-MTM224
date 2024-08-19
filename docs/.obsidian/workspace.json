@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ef4730bd5decc1a9",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -149,7 +160,7 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "f6c3004edf46a52c",
+  "active": "ef4730bd5decc1a9",
   "lastOpenFiles": [
     "Integração Numérica.md",
     "Equações diferenciais.md",
